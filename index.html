@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <style> 
+   body{
+    background-image:url("space.png");
+    background-size:cover;
+    /* opacity: 0.2;   */
+  }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333d4;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background:rgb(75, 75, 75);
+
+}
+.container{
+      display: grid;
+      grid-template-areas:
+      'lside lside lside lside';
+    }
+    .spacing{
+      margin:2px;
+      padding:10px;
+    }
+    #Rside{
+      display: none;
+      grid-area: rside;
+      border: 1px solid black;
+      justify-content: center;
+      align-items: center;
+    }
+    #Lside{
+      grid-area: lside;
+      text-align: center;
+      background-color: rgb(219 184 251 / 69%);
+    }
+    #Section{
+      grid-area: section;
+      border: 1px solid black;
+      text-align: center;
+      background-color: rgb(251, 250, 184);
+      display: none;
+    }
+    #footer{
+      display: none;
+      grid-area: footer;
+      border: 1px solid black;
+      text-align: center;
+      background-color: rgb(250, 159, 192);
+    }
+  </style>
+  </head>
+<body>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#ajax">AJAX</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="lg_sign.html">Sign In/Login</a></li>
+</ul>
+<div class="container">
+    <div id="Lside" class="spacing">
+    TO VIEW CONTENT YOU NEED TO SIGN IN/LOGIN</div>
+    <div id="Rside" class="spacing">
+      TO VIEW CONTENT YOU NEED TO SIGN IN/LOGIN
+    </div>
+    <div id="Section" class="spacing"> 
+      TO VIEW CONTENT YOU NEED TO SIGN IN/LOGIN
+    </div>
+    <div id="footer" class="spacing">
+      TO VIEW CONTENT YOU NEED TO SIGN IN/LOGIN
+    </div>
+  </div>
+</body>
+</html>
